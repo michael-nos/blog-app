@@ -1,1 +1,1 @@
-# react-template
+# blog-app

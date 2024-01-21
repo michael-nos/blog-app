@@ -1,0 +1,14 @@
+button.blogCategoryButton-blog-categories {
+  all: unset;
+  background-color: #24a0ed;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.75rem;
+
+  &:hover {
+    background-color: #71b8e4;
+  }
+}

@@ -1,0 +1,15 @@
+div.header {
+  align-items: flex-end;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+  padding-right: 1rem;
+
+  & svg.header-profile-icon {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+}
