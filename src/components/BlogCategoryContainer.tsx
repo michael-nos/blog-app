@@ -1,4 +1,5 @@
 import { BlogCategoryButton } from '@/components/BlogCategoryButton';
+import { useState } from 'react';
 
 const testData = [
   { type: 'Food' },
@@ -8,10 +9,24 @@ const testData = [
 ];
 
 export const BlogCategoryContainer = () => {
+  const [selectedButton, setSelectedButton] = useState<string | undefined>(
+    undefined
+  );
+
+  const onButtonClick = (value: string) => {
+    console.log('value: ', value);
+    setSelectedButton(value);
+  };
+
   return (
     <div className='blogCategoryContainer-container'>
       {testData.map((category, index) => (
-        <BlogCategoryButton categoryType={category.type} key={index} />
+        <BlogCategoryButton
+          category={category.type}
+          key={index}
+          onButtonClick={onButtonClick}
+          selectedButton={selectedButton}
+        />
       ))}
     </div>
   );

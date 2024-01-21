@@ -1,15 +1,26 @@
 import '@/styles/BlogCategoryButton.css';
 
 interface BlogCategoryButtonProps {
-  categoryType: string;
+  category: string;
+  onButtonClick: (string: string) => void;
+  selectedButton?: string;
 }
 
 export const BlogCategoryButton = ({
-  categoryType,
+  category,
+  onButtonClick,
+  selectedButton,
 }: BlogCategoryButtonProps) => {
   return (
-    <button className='blogCategoryButton-blog-categories'>
-      {categoryType}
+    <button
+      className={`blogCategoryButton-blog-categories ${
+        selectedButton === category &&
+        'blogCategoryButton-blog-selected-category'
+      }`}
+      onClick={(e) => onButtonClick((e.target as HTMLButtonElement).value)}
+      value={category}
+    >
+      {category}
     </button>
   );
 };
