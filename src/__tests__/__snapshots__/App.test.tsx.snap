@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should match the snapshot 1`] = `
+<div>
+  <div>
+    Mock App Component
+  </div>
+</div>
+`;
