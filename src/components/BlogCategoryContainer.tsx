@@ -14,8 +14,9 @@ export const BlogCategoryContainer = () => {
   );
 
   const onButtonClick = (value: string) => {
-    console.log('value: ', value);
-    setSelectedButton(value);
+    if (value === selectedButton) {
+      setSelectedButton(undefined);
+    } else setSelectedButton(value);
   };
 
   return (

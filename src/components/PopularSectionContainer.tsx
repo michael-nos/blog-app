@@ -5,20 +5,20 @@ const testData = [
   {
     category: 'Technology',
     date: '01/01/2024',
-    name: 'John Doe',
+    username: 'jaysontatum',
     title:
       'Wow some really crazy news stuff is going on Wow some really crazy news stuff is going on',
   },
   {
     category: 'Lifestyle',
     date: '01/01/2024',
-    name: 'John Doe',
+    username: 'tombrady',
     title: 'Wow some really crazy news stuff is going on',
   },
   {
     category: 'Food',
     date: '01/01/2024',
-    name: 'John Doe',
+    username: 'michaeljordan',
     title:
       'Wow some really crazy news stuff is going on Wow some really crazy news stuff is going on Wow some really crazy news stuff is going on',
   },
@@ -34,8 +34,8 @@ export const PopularSectionContainer = () => {
             key={index}
             category={cardData.category}
             date={cardData.date}
-            name={cardData.name}
             title={cardData.title}
+            username={cardData.username}
           />
         ))}
       </div>

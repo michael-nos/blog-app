@@ -1,3 +1,3 @@
 export const WelcomeHeading = () => {
-  return <h1>Good morning, Michael!</h1>;
+  return <h1>Hey there, tombrady!</h1>;
 };
